@@ -27,9 +27,21 @@ header {
   padding: 0 1em;
 }
 
+footer {
+  border-top: 1px solid #e1e1e1;
+  color: #59757b;
+  font-size: .6em;
+  font-variant: small-caps;
+  padding: 1em;
+}
+
 img {
   max-width: 640px;
   width: 100%;
+}
+
+a {
+  color: #669fd2;
 }
 
 .logo {
