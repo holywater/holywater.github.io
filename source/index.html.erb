@@ -9,13 +9,17 @@ title: HOLY WATER ☩ No Regrets
 <section>
   <strong>HOLY WATER</strong>. Een small-batch Gin uit Groningen. Gedestilleerd en met de hand gebotteld bij Mofongo's Distillery.
 </section>
-<%= image_tag("gingredients.jpg") %>
-<section>
-  <p>
+  <div class="photos">
+    <div><%= image_tag("holywater-2.jpg") %></div>
+    <section class="mobile-only"><p>
+      Opgericht door een groep vrienden met een gezonde dosis eigengereidheid en een ondernemende geest. Holy Water heeft de volle, ongefilterde, echte smaak van verse <em>botanicals</em> en is daarmee een echte gin-drinkers gin.
+    </p></section>
+    <div><%= image_tag("holywater-1.jpg") %></div>
+  </div>
+<section class="desktop-only">
+  <p class="desktop-only">
     Opgericht door een groep vrienden met een gezonde dosis eigengereidheid en een ondernemende geest. Holy Water heeft de volle, ongefilterde, echte smaak van verse <em>botanicals</em> en is daarmee een echte gin-drinkers gin.
   </p>
 </section>
-<br>
-<%= image_tag("botanicals.jpg") %>
 <%= partial "contact" %>
 <%= partial "footer" %>
