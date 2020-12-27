@@ -33,20 +33,34 @@ header {
 
 /* line 38, /Users/hugo/git/holywater.github.io/source/stylesheets/all.scss */
 nav {
-  position: absolute;
   font-size: .6em;
+  padding: 1em;
+  position: fixed;
   right: 0;
   top: 0;
   width: 100%; }
-  /* line 47, /Users/hugo/git/holywater.github.io/source/stylesheets/all.scss */
+  @media screen and (max-width: 800px) {
+    /* line 38, /Users/hugo/git/holywater.github.io/source/stylesheets/all.scss */
+    nav {
+      border-bottom: solid 3px;
+      padding: .5em;
+      position: absolute; } }
+  /* line 53, /Users/hugo/git/holywater.github.io/source/stylesheets/all.scss */
   nav a {
-    float: right;
+    float: left;
     margin: 0 1em; }
-  /* line 52, /Users/hugo/git/holywater.github.io/source/stylesheets/all.scss */
+    @media screen and (max-width: 800px) {
+      /* line 53, /Users/hugo/git/holywater.github.io/source/stylesheets/all.scss */
+      nav a {
+        font-size: .8em;
+        font-weight: 800;
+        margin: .5em; } }
+  /* line 64, /Users/hugo/git/holywater.github.io/source/stylesheets/all.scss */
   nav ul {
-    list-style-type: none; }
+    list-style-type: none;
+    margin: 0; }
 
-/* line 57, /Users/hugo/git/holywater.github.io/source/stylesheets/all.scss */
+/* line 70, /Users/hugo/git/holywater.github.io/source/stylesheets/all.scss */
 footer {
   border-top: 1px solid #e1e1e1;
   color: #59757b;
@@ -54,24 +68,25 @@ footer {
   font-variant: small-caps;
   padding: 1em; }
 
-/* line 65, /Users/hugo/git/holywater.github.io/source/stylesheets/all.scss */
+/* line 78, /Users/hugo/git/holywater.github.io/source/stylesheets/all.scss */
 img {
   max-width: 650px;
   width: 100% !important; }
   @media screen and (max-width: 800px) {
-    /* line 65, /Users/hugo/git/holywater.github.io/source/stylesheets/all.scss */
+    /* line 78, /Users/hugo/git/holywater.github.io/source/stylesheets/all.scss */
     img {
       width: 100%; } }
 
-/* line 74, /Users/hugo/git/holywater.github.io/source/stylesheets/all.scss */
+/* line 87, /Users/hugo/git/holywater.github.io/source/stylesheets/all.scss */
 a {
   color: #669fd2; }
 
-/* line 78, /Users/hugo/git/holywater.github.io/source/stylesheets/all.scss */
+/* line 91, /Users/hugo/git/holywater.github.io/source/stylesheets/all.scss */
 .logo {
+  margin-top: 1em;
   max-width: 400px; }
 
-/* line 82, /Users/hugo/git/holywater.github.io/source/stylesheets/all.scss */
+/* line 96, /Users/hugo/git/holywater.github.io/source/stylesheets/all.scss */
 .photos {
   display: -ms-flexbox;
   -ms-flex-wrap: wrap;
@@ -83,41 +98,41 @@ a {
   max-width: 1300px;
   margin: 0 auto; }
 
-/* line 94, /Users/hugo/git/holywater.github.io/source/stylesheets/all.scss */
+/* line 108, /Users/hugo/git/holywater.github.io/source/stylesheets/all.scss */
 .photos div {
   -webkit-box-flex: auto;
   -ms-flex: auto;
   flex: auto;
   font-size: 0;
   width: 200px; }
-  /* line 101, /Users/hugo/git/holywater.github.io/source/stylesheets/all.scss */
+  /* line 115, /Users/hugo/git/holywater.github.io/source/stylesheets/all.scss */
   .photos div:first-of-type {
     margin: 0;
     margin-right: 2px; }
     @media screen and (max-width: 1050px) {
-      /* line 101, /Users/hugo/git/holywater.github.io/source/stylesheets/all.scss */
+      /* line 115, /Users/hugo/git/holywater.github.io/source/stylesheets/all.scss */
       .photos div:first-of-type {
         margin-right: 0; } }
-  /* line 110, /Users/hugo/git/holywater.github.io/source/stylesheets/all.scss */
+  /* line 124, /Users/hugo/git/holywater.github.io/source/stylesheets/all.scss */
   .photos div:nth-of-type(2) {
     margin: 0;
     margin-left: 2px; }
     @media screen and (max-width: 1050px) {
-      /* line 110, /Users/hugo/git/holywater.github.io/source/stylesheets/all.scss */
+      /* line 124, /Users/hugo/git/holywater.github.io/source/stylesheets/all.scss */
       .photos div:nth-of-type(2) {
         margin-left: 0; } }
 
-/* line 122, /Users/hugo/git/holywater.github.io/source/stylesheets/all.scss */
+/* line 136, /Users/hugo/git/holywater.github.io/source/stylesheets/all.scss */
 .photos div img {
   width: 100%;
   height: auto; }
 
 @media screen and (min-width: 1050px) {
-  /* line 127, /Users/hugo/git/holywater.github.io/source/stylesheets/all.scss */
+  /* line 141, /Users/hugo/git/holywater.github.io/source/stylesheets/all.scss */
   .mobile-only {
     display: none; } }
 
 @media screen and (max-width: 1050px) {
-  /* line 133, /Users/hugo/git/holywater.github.io/source/stylesheets/all.scss */
+  /* line 147, /Users/hugo/git/holywater.github.io/source/stylesheets/all.scss */
   .desktop-only {
     display: none; } }
